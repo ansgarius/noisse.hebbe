@@ -1,0 +1,26 @@
+.hebbe_projects .wrapper{
+  display: flex;
+  height: 100dvh;
+  align-items: end;
+  background: var(--third-color);
+}
+
+.hebbe_projects .buttonWrapper{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hebbe_projects .wrapper .right,
+.hebbe_projects .wrapper .left{
+  width: 50dvw;
+  height: 80dvh;
+  margin: 1.25dvw;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  overflow-y: auto;
+}
+
+.hebbe_projects .group  small {
+	color: var(--primary-color);
+	font-family: var(--primary-font);
+	cursor: pointer;
+}

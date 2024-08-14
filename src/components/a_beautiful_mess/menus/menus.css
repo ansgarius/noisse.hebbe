@@ -1,0 +1,210 @@
+.a_beautiful_mess_menus.hidden {
+    display: none;
+}
+
+/*
+.menus {
+     height: 100%; 
+     overflow: auto;
+     width: 100%;
+     
+     
+     
+    }
+    
+    */
+.a_beautiful_mess_menus .menus {
+    position: fixed;
+    z-index: 9;
+/*     align-items: flex-end;
+    justify-content: flex-end; 
+    padding: 6rem 0 0;
+    */
+    min-height: 100vh;
+    background-color: #191919;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 100%;
+}
+
+/* .a_beautiful_mess_menus .menus {
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+} */
+.a_beautiful_mess_menus .menus li {
+    color: #fafafa;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+ 
+.a_beautiful_mess_menus .menus li .text-fill-animate-wrapper {
+    -webkit-text-stroke: .7px hsla(0,0%,100%,.4);
+    color: #191919;
+    font-family: Millionaire;
+    font-size: 40px;
+    position: relative;
+    transition: opacity .3s cubic-bezier(.215,.61,.355,1);
+    z-index: 2;
+}
+
+.a_beautiful_mess_menus .menus li .text-fill-animate-wrapper {
+    font-size:3.333333333333333dvw;
+}
+
+.a_beautiful_mess_menus .menus li .text-fill-animate-wrapper>div {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.a_beautiful_mess_menus .menus li .text-fill-animate-wrapper>div {
+    padding: 1.5rem 0;
+}
+
+.a_beautiful_mess_menus .menus li .text-fill-animate-wrapper>div:before {
+    background-color: hsla(0,0%,98%,.2);
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.a_beautiful_mess_menus .menus li .text-fill-animate-wrapper:hover .text-fill-animate:before,.a_beautiful_mess_menus .menus li .text-fill-animate-wrapper:hover>div:after {
+    width: 100%
+}
+
+.a_beautiful_mess_menus .menus li .text-fill-animate-wrapper .text-fill-animate {
+    position: relative;
+}
+
+
+.a_beautiful_mess_menus .menus li .text-fill-animate-wrapper small {
+    bottom: .875rem;
+    color: #fafafa;
+    font-family: Millionaire;
+    font-size: 1.5rem;
+    opacity: .8!important;
+    position: relative;
+    z-index: 2;
+}
+
+.a_beautiful_mess_menus .menus li .text-fill-animate-wrapper>div:after {
+    background-color: #fafafa;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transition: width .5s cubic-bezier(.215,.61,.355,1);
+    width: 0;
+    z-index: 3;
+}
+
+.a_beautiful_mess_menus .menus li .text-fill-animate-wrapper .text-fill-animate:before {
+    bottom: 50%;
+    color: #e5e3dc;
+    content: attr(data-text);
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    transform: translateY(50%);
+    transition: width .5s cubic-bezier(.215,.61,.355,1);
+    transition-delay: 0;
+    width: 0;
+    z-index: 3;
+}
+
+
+
+.col-md-6 {
+    flex: 0 0 47%;
+    max-width: 47%;
+}
+
+.overflow-hidden {
+    overflow: hidden!important;
+}
+
+
+.d-block {
+    display: block!important;
+}
+
+
+.a_beautiful_mess_menus .unactive{
+    animation:fadeOutMenuItem 1s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: var(--ds);
+}
+      /* ANIMATIONS ================ */
+
+  @keyframes fadeOutMenuItem {
+      from {     opacity: 1; 
+        transform: translateY(0px); }
+    to  { opacity: 0;
+        transform: translateY(90px); }
+    }
+    .a_beautiful_mess_menus .active{
+opacity: 0; 
+    animation:fadeInMenuItem .8s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: var(--de);
+
+  }
+  
+  /* ANIMATIONS ================ */
+
+  @keyframes fadeInMenuItem {
+    from {     opacity: 0; 
+        transform: translateY(90px); }
+    to  { opacity: 1;
+        transform: translateY(0px); }
+  }
+
+
+@media(min-width: 768px) {
+    .a_beautiful_mess_menus .menus li .text-fill-animate-wrapper {
+        font-size:3.333333333333333dvw
+    }
+}
+
+@media(min-width: 768px)and (max-width:1200px) {
+    .a_beautiful_mess_menus .menus li .text-fill-animate-wrapper {
+        font-size:calc(1.3rem + 3.6vw)
+    }
+}
+
+ 
+
+@media(min-width: 576px) {
+    .a_beautiful_mess_menus .menus li .text-fill-animate-wrapper>div {
+        padding:1.5rem 0
+    }
+}
+
+@media(max-width: 1200px) {
+    .a_beautiful_mess_menus .menus li .text-fill-animate-wrapper small {
+        font-size:calc(1.05rem + .6vw)
+    }
+}
+
+
+
+.a_beautiful_mess_menus .menus .floating-image {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+}
+
+.a_beautiful_mess_menus .menus .floating-image img {
+    width: 200px;
+}

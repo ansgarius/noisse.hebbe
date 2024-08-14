@@ -1,0 +1,140 @@
+/* .a_beautiful_mess_audio{
+    bottom: 1.5rem;
+ 
+    align-items: center;
+    bottom: 2rem;
+    display: flex;
+    gap: .25rem;
+    justify-content: flex-end;
+    left: 50%;
+    mix-blend-mode: difference;
+    position: fixed;
+    transform: translateX(-50%)!important;
+    width: 100vw;
+    z-index: 2024;
+padding: 0 1.5rem;
+max-width: 720px;
+margin: auto;
+}
+
+.a_beautiful_mess_audio .controls {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    width: 40px;
+} */
+
+
+
+.abm-audio-controls {
+    align-items: center;
+
+
+    /* en movil bajar a 16px */
+    bottom: 12dvw;
+    display: flex;
+    gap: .25rem;
+    justify-content: flex-end;
+    left: 50%;
+   /*  mix-blend-mode: difference; */
+    position: fixed;
+    transform: translateX(-50%)!important;
+    width: 100vw;
+    z-index: 2024
+}
+
+
+/* Extra small devices (phones, 600px and down)  */
+@media only screen and (max-width: 600px) {
+    .abm-audio-controls .lottie-audio-controls {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        height: 20px;
+        justify-content: center;
+        width: 40px;
+        margin-right: 5dvw;
+    }
+    
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up)  */
+@media only screen and (min-width: 600px) {
+    .abm-audio-controls .lottie-audio-controls {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        height: 20px;
+        justify-content: center;
+        width: 40px;
+        margin-right: 6.451612903225806dvw;
+    }
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up)   */
+@media only screen and (min-width: 992px) {
+
+
+    .abm-audio-controls {
+        bottom: 2.604166666666667dvw;
+    }
+
+
+    .abm-audio-controls .lottie-audio-controls {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        height: 20px;
+        justify-content: center;
+        width: 40px;
+        margin-right: 6.666666666666667dvw;
+    }
+
+}
+ 
+
+
+
+.abm-audio-controls .lottie-audio-controls .muted {
+    height: 1.5px;
+    width: 50%
+}
+
+.abm-audio-controls .lottie-audio-controls rect {
+    fill: transparent
+}
+
+.abm-audio-controls .lottie-audio-controls g,.abm-audio-controls .lottie-audio-controls path {
+    mix-blend-mode: difference
+}
+
+
+
+
+
+
+
+#uno {
+    animation: loading-bar-morph 1s linear .5s infinite;
+     }
+  
+  #loading-bar-middle {
+    animation: loading-bar-morph 1s linear .2s infinite;
+    transform-origin: center; }
+  
+  #loading-bar-right {
+    animation: loading-bar-morph 1s linear .4s infinite;
+    transform-origin: center; }
+  
+  @keyframes loading-bar-morph {
+    0% {
+     
+        transform:matrix(1 0 0 1.15 18 23.112)}
+ 
+    100% {
+        transform:matrix(1 0 0 1.15 18 23.112) } }

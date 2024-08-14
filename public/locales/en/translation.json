@@ -1,0 +1,108 @@
+{
+    "menu":{
+        "1":"WORLD",
+        "2":"Shop",
+        "3":"Why boomers?",
+        "4":"Contact",
+        "5":"Blog"
+    },
+    "main":{
+        "1":{
+            "titulo":"",
+            "subtitulo":"UNIQUE DESIGN",
+            "texto":{
+                "l1":"Numbers is proud to",
+                "l2":" introduce its premium clothing line,",
+                "l3":" featuring a ",
+                "l4":"unique selection of iconic images",
+                "l5":" and illustrations. ",
+                "l6":"Prepare yourself for the ",
+                "l7":"most classy t-shirts available out there. ",
+                "l8":"We also took care ",
+                "l9":"of premier packaging, ",
+                "l10":"because we're truly ",
+                "l11":"determined to change your ",
+                "l12":"perception of upscale things.",
+                "l13":"",
+                "l14":""
+            }
+            
+            
+            
+            
+            
+        },
+        "2":{
+            "titulo":"",
+            "subtitulo":"LIMITED EDITION",
+            "texto":"Every t-shirt is one of a limited edition and is accompanied by a certificate of authenticity. Each series is limited to 100 pieces. Yes, we'd like you to know — when we talk high-class, we really mean it."
+        },
+        "3":{
+            "titulo":"",
+            "subtitulo":"SUPERIOR QUALITY",
+            "texto":"We believe that quality is an important part of premium product. For our t-shirts we use soft and lightweight 100% cotton for extra comfort. We've personally checked our fabrics supplier for the compliance with all quality standards, and now we know him personally. We use water-based inks for printing so that they could last longer."
+        },
+        "4":{
+            "titulo":"",
+            "subtitulo":"MADE IN MOSCOW",
+            "texto":"'Made by Numbers' is a result of hard work of many creative people. Each t-shirt is handcrafted with care in a small workshop in the center of Moscow. We value hand work, and we've spent a lot of time to make sure the t-shirt quality matches the highest industry standards."
+        }
+    },
+    "aboutUs":{
+        "1":{
+            "titulo":"",
+            "subtitulo":"BRAND PHILOSOPHY",
+            "texto":"Numbers is a Moscow-based company, dedicated to the principles of fine craftsmanship,timeless design, and the celebration of country’s cultural heritage. We embrace the concept of exclusivity as the inspiration for all our distinctive designs.    "    
+        }
+    },
+    "shop":{
+        "1":{
+            "titulo":"",
+            "subtitulo":"Choose your series now",
+            "texto":" This series brings back the nostalgia for the favorite action movies of your youth. The heroes of action-filled 80s films, masters of martial arts and kings of shootouts, the unbeatable stars of Russian 'video salons'. Each print is unique and is created exclusively for Numbers by a young promising artist from Saint Petersburg.  Each print is limited to 100 t-shirts only."    
+        }
+    },
+    "why":{
+        "1":{
+            "titulo":"",
+            "subtitulo":"ALWAYS NEW",
+            "texto":"We simply like creating someting new. We are constantly searching for new ideas and only make things we'd like to own ourselves. This helps us to stand out from other brands, and thus helps our customers to stand out as well."    
+        },
+        "2":{
+            "titulo":"",
+            "subtitulo":"TRULY AUTHENTIC",
+            "texto":" Each piece has its own personal number. And for you to be sure, each item is accompanied by a genuine cerftificate from Numbers signed by the founders."    
+        },
+        "3":{
+            "titulo":"",
+            "subtitulo":"TOP QUALITY",
+            "texto":" Limited editions help us control the quality, since each item is handmade and we personally oversee the whole process of its creation."    
+        }
+    },
+    "contact":{
+        "1":{
+            "titulo":"",
+            "subtitulo":"Wellcome",
+            "texto":{
+                "l1":"We are allways happy to hear from yuo.",
+                "l2":"Should you have a question, feedback,",
+                "l3":"  proposal or just want to chat with us. ",
+                "l4":" please do not hesitate to get in touch.",
+                "l5":"",
+                "l6":"MAIL",
+                "l7":"theluckiestus@gmail.com",
+                "l8":"PHONE",
+                "l9":"+52 3333 322 334",
+                "l10":"SOCIAL ",
+                "l11":"FACEBBOK PRINTERES INSTAGRAM ",
+                "l12":" ",
+                "l13":"",
+                "l14":""    
+            } 
+        } 
+    },
+    "pie":{
+        "1":"SIZE & SHIPPING",
+        "2":"Terms of service"
+    }
+}

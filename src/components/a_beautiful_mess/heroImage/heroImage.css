@@ -1,0 +1,660 @@
+
+
+.heroImage {
+  overflow: hidden;
+      min-height: 100dvh;
+  }
+
+  @keyframes fadeInUpAlt {
+    0% {
+        opacity: 0;
+        transform: translateY(100px)
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+  }
+
+
+  
+
+/* Extra small devices (phones, 600px and down)  */
+@media only screen and (max-width: 600px) {
+    .content-data{
+    position: absolute;
+    top:44dvh; 
+    padding-left: 17.1875dvw;
+    padding-right: 17.1875dvw; 
+    }
+
+    
+    .content-data h1 {
+      color: #fff;
+      font-size: 5.9375dvw;
+      letter-spacing: .8px;
+      text-align: center;
+      font-family: Millionaire;
+      margin: 0;
+      margin-bottom:12.5dvw ;
+    animation-name: fadeInUpAlt;
+    white-space: nowrap;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 10s;
+  font-weight: initial;
+}
+
+
+.content-data p {
+  color:white;
+  font-size: 4.375dvw;
+/*   font-weight: 300; */
+  /* letter-spacing: .5px; */
+  font-family: MillionaireItalic;
+  mix-blend-mode: normal;
+/*   text-align: center; */
+  margin: 0;
+  margin-bottom:12.5dvw ;
+  white-space: nowrap;
+  animation-name: fadeInUpAlt;
+
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 11s;
+}
+
+
+    .content-button{
+      position: absolute;
+      bottom:10dvw;
+      
+      padding-left: 25dvw;
+      padding-right: 25dvw;
+    
+
+      animation-name: fadeInUpAlt;
+
+      animation-duration: 3s;
+      animation-fill-mode: both;
+      animation-delay: 12s;
+ 
+      /* 
+      
+     
+     
+     align-items: center;
+          display: flex;
+          height: calc(var(--vh, 1vh)*100);
+           */
+      }
+
+
+
+
+
+      
+      
+      .btn-experience-the-journey {
+        height: 11dvw;
+        width: 50dvw;
+       
+        
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      
+      
+      
+      .btn-experience-the-journey span {
+        color: white;
+        font-size:3.75dvw;
+      font-family: MillionaireRoman;
+      white-space: nowrap; 
+  }
+
+  .btn-experience-the-journey svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+ 
+}
+/* Small devices (portrait tablets and large phones, 600px and up)  */
+@media only screen and (min-width: 600px) {
+    .content-data{
+    position: absolute;
+    top:53dvh;
+    padding-left: 24.05913978494624dvw;
+    padding-right: 24.05913978494624dvw;
+    }
+
+    
+    .content-data h1 {
+      color: #fff;
+      font-size: 5.043010752688172dvw;
+      letter-spacing: .8px;
+      text-align: center;
+      font-family: Millionaire;
+      margin: 0;
+      margin-bottom:5.376344086021505dvw ;
+    animation-name: fadeInUpAlt;
+    white-space: nowrap;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 10s;
+  font-weight: 100;
+}
+
+
+.content-data p {
+  color:white;
+  font-size: 3.884408602150538dvw;
+/*   font-weight: 300; */
+  /* letter-spacing: .5px; */
+  font-family: MillionaireItalic;
+  mix-blend-mode: normal;
+/*   text-align: center; */
+  margin: 0;
+  margin-bottom:5.376344086021505dvw ;
+  white-space: nowrap;
+  animation-name: fadeInUpAlt;
+
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 11s;
+}
+
+
+    .content-button{
+      position: absolute;
+      bottom:8.602150537634409dvw;
+      
+      padding-left: 32.79569892473118dvw;
+      padding-right: 32.79569892473118dvw;
+    
+
+      animation-name: fadeInUpAlt;
+
+      animation-duration: 3s;
+      animation-fill-mode: both;
+      animation-delay: 12s;
+ 
+      /* 
+      
+     
+     
+     align-items: center;
+          display: flex;
+          height: calc(var(--vh, 1vh)*100);
+           */
+      }
+
+
+
+
+ 
+
+      
+      .btn-experience-the-journey {
+        height: 8dvw;
+        width: 34.40860215053763vw;
+        
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      
+      
+      
+      .btn-experience-the-journey span {
+        color: white;
+        font-size:2.688172043010753dvw;
+      font-family: MillionaireRoman;
+      white-space: nowrap; 
+  }
+
+  .btn-experience-the-journey svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+      
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up)   */
+@media only screen and (min-width: 992px) {
+    .content-data{
+    position: absolute;
+    top:46dvh;
+    
+    padding-left: 40.05208333333333dvw;
+    padding-right: 40.05208333333333dvw;
+    /* 
+    
+    height: 100vh;
+   
+   
+   align-items: center;
+        display: flex;
+        height: calc(var(--vh, 1vh)*100);
+        width: 100%;
+         */
+    }
+
+    
+    .content-data h1 {
+      color: #fff;
+      font-size: 1.953125dvw;
+      letter-spacing: .8px;
+      text-align: center;
+      font-family: Millionaire;
+      margin: 0;
+      margin-bottom:2.083333333333333dvw ;
+    animation-name: fadeInUpAlt;
+    white-space: nowrap;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 10s;
+  font-weight: initial;
+}
+
+
+.content-data p {
+  color:white;
+  font-size: 1.505208333333333dvw;
+/*   font-weight: 300; */
+  /* letter-spacing: .5px; */
+  font-family: MillionaireItalic;
+  mix-blend-mode: normal;
+/*   text-align: center; */
+  margin: 0;
+  margin-bottom:2.083333333333333dvw ;
+  white-space: nowrap;
+  animation-name: fadeInUpAlt;
+
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 11s;
+}
+
+
+    .content-button{
+      position: absolute;
+      bottom: 11.85185185185185dvh;
+      
+      padding-left: 43.33333333333333dvw;
+      padding-right: 43.33333333333333dvw;
+    
+
+      animation-name: fadeInUpAlt;
+
+      animation-duration: 3s;
+      animation-fill-mode: both;
+      animation-delay: 12s;
+ 
+      /* 
+      
+     
+     
+     align-items: center;
+          display: flex;
+          height: calc(var(--vh, 1vh)*100);
+           */
+      }
+
+      
+      .btn-experience-the-journey {
+        height: 2.9dvw;
+        width: 13.33333333333333dvw;
+        
+
+      position: relative;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+
+
+    .btn-experience-the-journey span {
+      color: white;
+      font-size: 1.041666666666667dvw;
+      font-family: MillionaireRoman;
+      white-space: nowrap; 
+  }
+
+  .btn-experience-the-journey svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+}
+
+  .heroImage .image-container {
+    transform: scale(1);
+    transition: all 3s cubic-bezier(.72,0,.28,1);
+ 
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    opacity: 1;
+
+    transform: translateZ(0);
+    transition: opacity .25s linear;
+    will-change: opacity;
+
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+    vertical-align: middle;
+    border-style: none;
+
+	background:    url("../../../../public/assets/img/img-cover.webp" ) center top  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+/* padding-top: 15%; */
+/*     top: 0;
+    left: 0; */
+/* 	mix-blend-mode: multiply; */
+/* 	z-index:100; */
+}
+ 
+
+
+ 
+ 
+
+
+
+/*   ------------------------------------------------------------------------------- */
+
+.heroImage .icon {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 13px;
+	height: 13px;
+  
+
+  }
+
+ .heroImage .icon span {
+	width: 3px;
+	height: 100%;
+	background-color: orange;
+	border-radius: 3px;
+	transform-origin: bottom;
+	animation: bounce 2.2s ease infinite alternate;
+	content: '';
+  }
+  .heroImage span {
+    &:nth-of-type(2) {
+      animation-delay: -2.2s; /* Start at the end of animation */
+    }
+  
+    &:nth-of-type(3) {
+      animation-delay: -3.7s; /* Start mid-way of return of animation */
+    }
+  }
+
+
+  @keyframes bounce {
+	10% {
+	  transform: scaleY(0.3); /* start by scaling to 30% */
+	}
+  
+	30% {
+	  transform: scaleY(1); /* scale up to 100% */
+	}
+  
+	60% {
+	  transform: scaleY(0.5); /* scale down to 50% */
+	}
+  
+	80% {
+	  transform: scaleY(0.75); /* scale up to 75% */
+	}
+  
+	100% {
+	  transform: scaleY(0.6); /* scale down to 60% */
+	}
+  }
+  
+
+
+
+
+
+  .heroImage .wrapper {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    height: calc(var(--vh, 1vh)*100);
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+
+  .heroImage .heroImage_cover-bg-wrapper   {
+   /*  opacity: 1;
+    transform: scale(1.6); */
+    transition: all 3s cubic-bezier(.72,0,.28,1);
+
+    background-color: #131313;
+   /*  opacity: .6; */
+}
+
+.heroImage .wrapper .content{
+  
+  
+  max-width: 960px;
+  padding: 0 1.5rem;
+  /*   *//*  ***************************************************************** */
+    margin: auto;
+    width: 100%;
+}
+
+
+
+
+
+.heroImage .content .tittle{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 7.5rem;
+    letter-spacing: .8px;
+    text-align: center;
+  
+}
+
+
+.heroImage .content .text p{
+  color: hsla(0,0%,100%,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 1.333rem;
+    text-align:center;
+    font-weight: 300;
+    letter-spacing: .5px;
+    mix-blend-mode: normal;
+
+
+    animation-name: fadeInUpAlt;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    transition-delay: 1.8s;
+    margin: 0;
+}
+
+
+.heroImage  .scroll-down{
+
+  max-width: 960px;
+  padding: 0 1.5rem;
+  /*   *//*  ***************************************************************** */
+    margin: auto;
+    width: 100%;
+
+    animation-name: fadeInUpAlt;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+    transition-delay: 2.1s;
+    position: relative!important;
+/* 
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       margin: 4rem 0rem;    */
+}
+
+
+
+
+.scroll-down span {
+/*   bottom: 1rem; */
+  color: hsla(0,0%,100%,.7);
+  font-family: Roslindale-DisplayCondensed,Georgia,serif,Palatino Linotype,Book Antiqua,Palatino,Times New Roman,Times;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  left: 35%; 
+  transform: translateX(-50%)!important;
+}
+
+/* 
+
+.btn-experience-the-journey {
+  bottom: 5rem;
+ cursor: pointer;
+ left: 50%;
+ position: absolute;
+ transform: translateX(-50%)!important;
+ z-index: 2;
+}
+
+
+
+.btn-experience-the-journey .oval {
+  left: 50%;
+  position: absolute;
+  top: calc(50% - 16px);
+  transform: translate(-50%,-50%);
+  z-index: 0;
+} 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heroImage .write
+ {
+/* color: white;
+opacity: .7;
+font-size: 1.777rem; */
+}
+
+
+
+.heroImage .ovalLoop svg path {
+  stroke-dasharray: 780;
+  stroke-dashoffset: 0;
+  animation: write-circleLoop 4.5s ease-in forwards infinite;
+ /*  animation-delay: 1s; */
+}
+  
+ 
+ 
+
+@keyframes write-circleLoop {
+ 
+
+
+  0% {
+    stroke-dashoffset: 780;
+  }
+ 
+  56% {
+    stroke-dashoffset: 0;
+  }
+ 
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+ 
+ 
+.heroImage .oval svg path {
+    stroke-dasharray: 780;
+    stroke-dashoffset: 0;
+    animation: write-circle2 .8s ease-in forwards;
+  }
+    
+ .heroImage .oval  svg:hover path {
+    animation: write-circle .8s ease-in forwards;
+ 
+  }
+   
+  @keyframes write-circle {
+    from {
+      stroke-dashoffset: 0;
+    }
+  
+    to {
+      stroke-dashoffset: 780;
+    }
+  }
+
+  @keyframes write-circle2 {
+    from {
+      stroke-dashoffset: 780;
+    }
+  
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

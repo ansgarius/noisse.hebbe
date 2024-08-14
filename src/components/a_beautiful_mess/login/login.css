@@ -1,0 +1,493 @@
+ 
+
+
+
+    .hebbe_login .contentLogin button {
+
+    background: var(--playeras-primary-color);
+    color: var(--playeras-second-color);
+    border-radius: 30%;
+    margin-bottom: 5dvw;
+    border: 0;
+    padding: 2.5dvw 5dvw;
+    font-size: 2.816901408450704dvh;
+    font-family: var(--playeras-font);
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* form starting stylings ------------------------------- */
+  .hebbe_login .group        { 
+    position:relative; 
+    margin-bottom:2.962962962962963dvh; 
+    display: flex;
+    justify-content: start;
+}
+
+  .hebbe_login input         {
+    font-size:1.481481481481481dvh;
+    padding:0.7407407407407407dvh 10px 0.7407407407407407dvh 5px;
+/*     display:block;
+    width:300px; */
+    border:none;
+    border-bottom:1px solid  rgb(137,137,137,.3);
+    font-family: var(--third-font);
+    color: var(--primary-color); 
+  }
+
+
+  .hebbe_login  input:focus     { outline:none; }
+
+
+  
+  
+
+  .hebbe_login  input:not([value=""])~ label {display: none; }
+  /* active state */
+  .hebbe_login  input:focus ~ label  {
+    top:-16px;
+    font-size: 1.25dvw;
+    color:var(--second-color);
+  }
+
+ /* BOTTOM BARS ================================= */
+   .hebbe_login .bar  { position:relative; display:block; width:100%;}
+ 
+   .hebbe_login .bar:before,   .hebbe_login .bar:after   {
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:var(--primary-color); 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+  .hebbe_login .bar:before {
+left:0%;
+}
+  .hebbe_login .bar:after {
+  right:0%; 
+}
+
+ 
+  .hebbe_login input:focus ~ .bar:before,   .hebbe_login input:focus ~ .bar:after {
+  width:50%;
+}
+  
+  /* HIGHLIGHTER ================================== */
+   .hebbe_login .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  
+  /* active state */
+   .hebbe_login input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.6s ease;
+    -moz-animation:inputHighlighter 0.6s ease;
+    animation:inputHighlighter 0.6s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+    from { background:var(--second-color); }
+    to  { width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+    from { background:var(--second-color); }
+    to  { width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+    from { background:var(--second-color); }
+    to  { width:0; background:transparent; }
+  }
+
+
+
+  
+/* Extra small devices (phones, 600px and down)  */
+@media only screen and (max-width: 600px) {
+
+
+  .hebbe_login {
+    display: flex;
+    flex-direction: column;
+    min-height: 91%;
+    justify-content: space-between;
+}
+  .hebbe_login .contentLogin {
+    /* width: 100%;
+    height: 50%; */ 
+    padding: 0dvw 5dvw 0dvw 5dvw; 
+    transform: translateY(-5dvw);
+
+    }
+
+    .hebbe_login .contentLogin .tittle {
+      margin-bottom: 5dvw;
+      font-size: 2.816901408450704dvh;
+      font-family: var(--playeras-font);
+      color: var(--playeras-primary-color);
+  }
+
+  
+.hebbe_login .contentLogin .text {
+  font-size: var(--playeras-cel-text-size);
+  font-family: var(--playeras-font);
+  color: var(--playeras-primary-color);
+  margin-bottom: 5dvw;
+}
+
+  /* LABEL ======================================= */
+  .hebbe_login  label          {
+    color:var(--primary-color); 
+    font-size:5dvw;
+    font-family:var(--primary-font);
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .hebbe_login .wrapper-ghest,
+
+  .hebbe_login .wrapper {
+    padding: 2.5dvw  5dvw 2.5dvw 5dvw;
+    border: 1px solid #CCCCCC;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 5dvw;
+/*     width: 100%; */
+}
+.hebbe_login .wrapper-ghest{
+background-color: var(--playeras-primary-color);
+} 
+ 
+.hebbe_login .wrapper-ghest p{
+
+margin: 0rem;
+
+font-size: 3.75dvw;
+font-family: var(--playeras-font);
+color: white;
+}
+
+
+
+
+
+.hebbe_login .wrapper  p{
+  margin: 0rem;
+  /* font-weight: 900; */
+  font-size: var(--playeras-cel-text-size);
+  font-family: var(--playeras-font);
+  color: var(--playeras-primary-color);
+}
+
+
+
+
+.hebbe_login .footer {
+  /* width: 100%;
+  height: 50%; */
+  background: var(--playeras-primary-color);
+  padding: 10dvw 5dvw 10dvw 5dvw; 
+  }
+  
+  
+  .hebbe_login .footer .tittle {
+      margin-bottom: 5dvw;
+      font-size: 2.816901408450704dvh;
+      font-family: var(--playeras-font);
+      color: var(--playeras-second-color);
+  }
+  
+  .hebbe_login .footer .text {
+      font-size: var(--playeras-cel-text-size);
+      font-family: var(--playeras-font);
+      color: var(--playeras-second-color);
+  }
+  
+  
+}
+  /* Small devices (portrait tablets and large phones, 600px and up)  */
+@media only screen and (min-width: 600px) {
+
+  .hebbe_login {
+    display: flex;
+    flex-direction: column;
+    min-height: 93%;
+    justify-content: space-between;
+}
+  .hebbe_login .contentLogin {
+    /* width: 100%;
+    height: 50%; */ 
+    padding: 0dvw 5dvw 6.236559139784946dvw 5dvw; 
+
+    transform: initial;
+
+    }
+
+    .hebbe_login .contentLogin .tittle {
+      margin-bottom: 5dvw;
+      font-size: 2.816901408450704dvh;
+      font-family: var(--playeras-font);
+      color: var(--playeras-primary-color);
+  }
+
+  
+.hebbe_login .contentLogin .text {
+  font-size: var(--playeras-cel-text-size);
+  font-family: var(--playeras-font);
+  color: var(--playeras-primary-color);
+  margin-bottom: 5dvw;
+}
+
+  /* LABEL ======================================= */
+  .hebbe_login  label          {
+    color:var(--playeras-second-color); 
+    font-size:5dvw;
+    font-family:var(--playeras-font);
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+
+
+
+
+
+
+
+
+
+
+
+.hebbe_login .wrapper-ghest,
+.hebbe_login .wrapper {
+  padding: 2.5dvw  5dvw 2.5dvw 5dvw;
+  border: 1px solid #CCCCCC;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 2.962962962962963dvw;
+/*     width: 100%; */
+}
+.hebbe_login .wrapper-ghest{
+background-color: var(--playeras-primary-color);
+} 
+ 
+.hebbe_login .wrapper-ghest p{
+
+margin: 0rem;
+
+font-size: 2.150537634408602dvw;
+font-family: var(--playeras-font);
+color: white;
+}
+
+
+
+
+
+
+
+
+
+.hebbe_login .wrapper  p{
+  margin: 0rem;
+  /* font-weight: 900; */
+  font-size: var(--playeras-cel-text-size);
+  font-family: var(--playeras-font);
+  color: var(--playeras-primary-color);
+}
+
+
+
+.hebbe_login .footer {
+  /* width: 100%;
+  height: 50%; */
+  background: var(--playeras-primary-color);
+  padding: 10dvw 5dvw 10dvw 5dvw; 
+  }
+  
+  
+  .hebbe_login .footer .tittle {
+      margin-bottom: 5dvw;
+      font-size: 2.816901408450704dvh;
+      font-family: var(--playeras-font);
+      color: var(--playeras-second-color);
+  }
+  
+  .hebbe_login .footer .text {
+      font-size: var(--playeras-cel-text-size);
+      font-family: var(--playeras-font);
+      color: var(--playeras-second-color);
+  }
+  
+  
+}
+
+  /* Large devices (laptops/desktops, 992px and up)   */
+@media only screen and (min-width: 992px) {
+
+  .hebbe_login {
+    display: initial;
+    flex-direction: initial;
+    min-height: initial;
+    justify-content: initial;
+}
+
+
+  .hebbe_login .contentLogin {
+    /* width: 100%;
+    height: 50%; */ 
+    padding: 0dvw 3.333333333333333dvw   0dvw 3.333333333333333dvw; 
+    
+    transform: translateY(0dvw);
+    }
+
+    .hebbe_login .contentLogin .tittle {
+      margin: 0;
+      margin-bottom: 1.481481481481481dvh;
+      font-size: 1.480833333333333dvw;
+      font-family: var(--primary-font);
+      color: var(--primary-color);
+  }
+  
+.hebbe_login .contentLogin .text {
+      margin: 0;
+      font-size: 0.8333333333333333dvw;
+  font-family: var(--third-font);
+  color: var(--second-color);
+  margin-bottom: 1.481481481481481dvh;
+  cursor: pointer;
+}
+
+  /* LABEL ======================================= */
+  .hebbe_login  label          {
+    color:var(--primary-color); 
+    font-size:1.25dvw;
+    font-family:var(--third-font);
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:0px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+
+  .hebbe_login .wrapper-ghest,
+  .hebbe_login .wrapper {
+    padding:   0.8333333333333333dvh  1.666666666666667dvh ;
+    border: 1px solid  var(--second-color);
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 0.8333333333333333dvw ;
+/*     width: 100%; */
+cursor: pointer;
+}
+.hebbe_login .wrapper-ghest{
+  background-color: var(--playeras-primary-color);
+} 
+.hebbe_login .wrapper  p{
+  margin: 0rem;
+  /* font-weight: 900; */
+  font-size: 0.8333333333333333dvw;
+  font-family: var(--third-font);
+  color: var(--second-color);
+}
+.hebbe_login .wrapper-ghest p{
+ 
+  margin: 0rem;
+ 
+  font-size: 0.8333333333333333dvw;
+  font-family: var(--playeras-font);
+  color: white;
+}
+
+
+.hebbe_login .footer {
+  /* width: 100%;
+  height: 50%; */
+  background: var(--primary-color);
+  padding: 0.8333333333333333dvh  1.666666666666667dvh; 
+  position: absolute;
+  bottom: 0;
+  /* width: 36dvw; */
+  }
+  
+  
+  .hebbe_login .footer .tittle {
+      margin-bottom:1.666666666666667dvh;
+      font-size: 2.962962962962963dvh;
+      font-family: var(--second-font);
+      color: var(--third-color);
+  }
+  
+  .hebbe_login .footer .text {
+    font-size: 1.481481481481481dvh;
+      font-family: var(--third-font);
+      color: var(--third-color);
+  }
+  
+  
+}

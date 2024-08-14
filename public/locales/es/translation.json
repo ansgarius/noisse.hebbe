@@ -1,0 +1,104 @@
+{
+    "menu":{
+        "1":"Mundo",
+        "2":"Comercio",
+        "3":"¿Por qué los boomers?",
+        "4":"Contacto",
+        "5":"Blog"
+    },
+    "main":{
+        "1":{
+            "titulo":"",
+            "subtitulo":"DISEÑO UNICO",
+            "texto":{
+                "l1":"Numbers se enorgullece de",
+                "l2":" presentar su línea de ropa premium,",
+                "l3":" que presenta una ",
+                "l4":"selección única de imágenes ",
+                "l5":"e ilustraciones icónicas. ",
+                "l6":"Prepárate para las ",
+                "l7":"camisetas más elegantes ",
+                "l8":"disponibles en el mercado. También nos encargamos ",
+                "l9":"del empaque de primer nivel,",
+                "l10":" porque estamos realmente ",
+                "l11":"decididos a cambiar su ",
+                "l12":"percepción de las cosas de lujo.",
+                "l13":"",
+                "l14":""    
+            }
+            
+        },
+        "2":{
+            "titulo":"",
+            "subtitulo":"EDICIÓN LIMITADA",
+            "texto":"Cada camiseta es de edición limitada y va acompañada de un certificado de autenticidad. Cada serie está limitada a 100 piezas. Sí, nos gustaría que lo supiera: cuando hablamos de clase alta, lo decimos en serio."
+        },
+        "3":{
+            "titulo":"",
+            "subtitulo":"CALIDAD SUPERIOR",
+            "texto":"Creemos que la calidad es una parte importante del producto premium. Para nuestras camisetas usamos 100% algodón suave y liviano para mayor comodidad. Hemos comprobado personalmente que nuestro proveedor de tejidos cumple con todos los estándares de calidad y ahora lo conocemos personalmente. Utilizamos tintas a base de agua para imprimir para que puedan durar más."
+        },
+        "4":{
+            "titulo":"",
+            "subtitulo":"HECHO EN MOSCÚ",
+            "texto":"'Made by Numbers' es el resultado del arduo trabajo de muchas personas creativas. Cada camiseta está hecha a mano con mimo en un pequeño taller en el centro de Moscú. Valoramos el trabajo manual y hemos dedicado mucho tiempo a asegurarnos de que la calidad de las camisetas coincida con los más altos estándares de la industria."
+        }
+    },
+    "aboutUs":{
+        "1":{
+            "titulo":"",
+            "subtitulo":"FILOSOFIA DE MARCA",
+            "texto":"Numbers es una empresa con sede en Moscú, dedicada a los principios de la artesanía fina, el diseño atemporal y la celebración del patrimonio cultural del país. Adoptamos el concepto de exclusividad como inspiración para todos nuestros diseños distintivos."    
+        }
+    },
+    "shop":{
+        "1":{
+            "titulo":"",
+            "subtitulo":"Elige tu serie ahora",
+            "texto":"Esta serie trae de vuelta la nostalgia por las películas de acción favoritas de tu juventud. Los héroes de las películas de acción de los 80, maestros de las artes marciales y reyes de los tiroteos, las estrellas imbatibles de los 'videosalones' rusos. Cada impresión es única y está creada exclusivamente para Numbers por un joven artista prometedor de San Petersburgo. Cada impresión está limitada a 100 camisetas únicamente."    
+        }
+    },
+    "why":{
+        "1":{
+            "titulo":"",
+            "subtitulo":"SIEMPRE NUEVO",
+            "texto":"Simplemente nos gusta crear algo nuevo. Estamos constantemente buscando nuevas ideas y solo hacemos cosas que nos gustaría poseer. Esto nos ayuda a destacarnos de otras marcas y, por lo tanto, ayuda a nuestros clientes a destacarse también."    
+        },
+        "2":{
+            "titulo":"",
+            "subtitulo":"VERDADERAMENTE AUTÉNTICO",
+            "texto":"Cada pieza tiene su propio número personal. Y para que estés seguro, cada artículo va acompañado de un certificado genuino de Numbers firmado por los fundadores."    
+        },
+        "3":{
+            "titulo":"",
+            "subtitulo":"CALIDAD SUPERIOR",
+            "texto":"Las ediciones limitadas nos ayudan a controlar la calidad, ya que cada artículo está hecho a mano y supervisamos personalmente todo el proceso de su creación."    
+        }
+    },
+    "contact":{
+        "1":{
+            "titulo":"",
+            "subtitulo":"Bienvenida/o",
+            "texto":{
+                "l1":"Siempre estamos felices de saber de ti.",
+                "l2":" Si tiene una pregunta, comentario,",
+                "l3":" propuesta o simplemente quiere chatear con nosotros. ",
+                "l4":" por favor no dude en ponerse en contacto.",
+                "l5":"",
+                "l6":"MAIL ",
+                "l7":"theluckiestus@gmail.com ", 
+                "l8":"PHONE ",
+                "l9":"+52 3333 322 334",
+                "l10":" SOCIAL",
+                "l11":"FACEBBOK PRINTERES INSTAGRAM ",
+                "l12":" ",
+                "l13":"",
+                "l14":""    
+            } 
+        } 
+    },
+    "pie":{
+        "1":"TAMAÑO Y ENVÍO",
+        "2":"Términos de servicio"
+    }
+}

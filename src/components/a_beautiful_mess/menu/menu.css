@@ -1,0 +1,266 @@
+
+
+
+
+/* .a_beautiful_mess_menu .tittle {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+}
+
+.a_beautiful_mess_menu .tittle a {
+    color: black;
+    font-size: 2.369rem;
+    font-weight: 900;
+    text-decoration: none;
+} */
+
+
+
+
+
+
+
+.a_beautiful_mess_menu .logo .animate-rotate-negative{ 
+	animation: rotate-negative linear 1s 1;  
+    animation-fill-mode: forwards;
+ /*  animation-delay: 2s; */
+}
+@keyframes rotate-negative {
+	0% {transform: rotateX(180deg);  } 
+	50% { transform: rotateX(90deg);  } 
+	100% { transform: rotateX(0deg);  }
+}
+ 
+
+
+
+/* Flash class and keyframe animation */
+.a_beautiful_mess_menu .logo .animate-rotate{ 
+	animation: rotate linear 1s 1;  
+    animation-fill-mode: forwards;
+ /*  animation-delay: 2s; */
+}
+@keyframes rotate {
+	0% {transform: rotateX(0deg);  } 
+	50% { transform: rotateX(90deg);  } 
+	100% { transform: rotateX(180deg);  }
+}
+ 
+
+
+  
+
+/* Extra small devices (phones, 600px and down)  */
+@media only screen and (max-width: 600px) {
+  .a_beautiful_mess_menu{
+
+
+    padding-left: 10dvw;
+    padding-right: 10dvw;
+    display: flex;
+    align-items: center;
+    box-sizing:border-box;
+    justify-content: flex-end;
+    
+    
+    
+    mix-blend-mode: difference; 
+    /*   
+    pointer-events: none;
+    
+    */
+    position: fixed;
+    width: 100dvw;
+    z-index: 2024; 
+    
+    height: 12.5dvw ;
+    
+    
+    /*     padding: 0 1.5rem; */
+    
+    /* 
+    gap: .25rem;
+    transform: translateX(-50%)!important;
+    top: 2rem;
+    margin: auto;
+    max-width: 720px; */
+    /*  left: 50%; */
+
+ 
+}
+
+.a_beautiful_mess_menu .logo span {
+
+    color: hsla(0,0%,100%,1);
+    font-size:3.75dvw;
+    font-weight: 300;
+}
+
+.a_beautiful_mess_menu .logo svg {
+    height: 7.5dvw;
+    width: 7.5dvw;
+    transform: translate3d(0px, 0px, 0px);
+    content-visibility: visible;
+    vertical-align: middle;
+
+}
+
+
+ 
+
+.a_beautiful_mess_menu  .logo {
+    
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    pointer-events: all;
+    gap: 2.5dvw;
+
+    
+}
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up)  */
+@media only screen and (min-width: 600px) {
+  .a_beautiful_mess_menu{
+ 
+
+    padding-left: 8.602150537634409dvw;
+    padding-right: 8.602150537634409dvw;
+    display: flex;
+    align-items: center;
+    box-sizing:border-box;
+    justify-content: flex-end;
+    
+    
+    
+    mix-blend-mode: difference; 
+    /*   
+    pointer-events: none;
+    
+    */
+    position: fixed;
+    width: 100dvw;
+    z-index: 2024; 
+    
+    height:17.20430107526882dvw ;
+    
+    
+    /*     padding: 0 1.5rem; */
+    
+    /* 
+    gap: .25rem;
+    transform: translateX(-50%)!important;
+    top: 2rem;
+    margin: auto;
+    max-width: 720px; */
+    /*  left: 50%; */
+
+ 
+}
+
+.a_beautiful_mess_menu .logo span {
+
+    color: hsla(0,0%,100%,1);
+    font-size:3.225806451612903dvw;
+    font-weight: 300;
+}
+
+.a_beautiful_mess_menu .logo svg {
+    height: 5.376344086021505dvw;
+    width: 5.376344086021505dvw;
+    transform: translate3d(0px, 0px, 0px);
+    content-visibility: visible;
+    vertical-align: middle;
+
+}
+
+
+ 
+
+.a_beautiful_mess_menu  .logo {
+    
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    pointer-events: all;
+    gap:1.075268817204301dvw;
+
+    
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up)   */
+@media only screen and (min-width: 992px) {
+  .a_beautiful_mess_menu{
+
+
+    padding-left: 6.666666666666667dvw;
+    padding-right: 6.666666666666667dvw;
+    display: flex;
+    align-items: center;
+    box-sizing:border-box;
+    justify-content: flex-end;
+    
+    
+    
+    mix-blend-mode: difference; 
+    /*   
+    pointer-events: none;
+    
+    */
+    position: fixed;
+    width: 100dvw;
+    z-index: 2024; 
+    
+    height: 6.666666666666667dvw ;
+    
+    
+    /*     padding: 0 1.5rem; */
+    
+    /* 
+    gap: .25rem;
+    transform: translateX(-50%)!important;
+    top: 2rem;
+    margin: auto;
+    max-width: 720px; */
+    /*  left: 50%; */
+
+ 
+}
+
+.a_beautiful_mess_menu .logo span {
+
+    color: hsla(0,0%,100%,1);
+    font-size:1.25dvw;
+    font-weight: 400;
+}
+
+.a_beautiful_mess_menu .logo svg {
+    height: 2.083333333333333dvw;
+    width: 2.083333333333333dvw;
+    transform: translate3d(0px, 0px, 0px);
+    content-visibility: visible;
+    vertical-align: middle;
+
+}
+
+
+ 
+
+.a_beautiful_mess_menu  .logo {
+    
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    pointer-events: all;
+    gap: 0.4166666666666667dvw;
+
+    
+}
+
+}

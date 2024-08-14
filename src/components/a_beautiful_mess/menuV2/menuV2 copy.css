@@ -1,0 +1,865 @@
+
+.a_beautiful_mess_menuV2 #menuUsuario {
+  position: fixed;
+
+  width: 100dvw;
+  /* height:91dvh ;  */
+
+  /*  transform: translate(-205dvw,-.6rem);  */
+  /*     transition: transform .5s   cubic-bezier(0.77,0.2,0.05,1.0) ; */
+  transition: transform .5s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+
+  /* margin-left: 2rem;
+    margin-bottom: 13.288rem; */
+  /*     
+    align-items: center;
+    
+    */
+  list-style-type: none;
+  background: rgb(163, 213, 205);
+  padding-left: 15dvw;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+/* .a_beautiful_mess_menuV2 #menuToggle #menu .paginasBurger li:last-child {
+  opacity: .4;
+  text-transform: uppercase;
+  cursor: pointer;
+} */
+
+.a_beautiful_mess_menuV2 #usuarioToggle #menuUsuario .paginasUsuario .animate-bottom-menu,
+
+.a_beautiful_mess_menuV2 .paginasBurger .animate-bottom-menu {
+  position: relative;
+  animation: animatebottommenu ease-in 1s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes animatebottommenu {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* ********************************************************************************************** */
+.a_beautiful_mess_menuV2 #menuToggle input:checked~ul {
+  /* transform:translate(-92dvw, 0)   */
+}
+
+
+
+/*
+  * Just a quick hamburger
+  */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 3.802px;
+  margin-bottom: 0.8802816901408451dvh;
+  background: #cdcdcd;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+
+/*
+  * But let's hide the middle one.
+  */
+#menuToggle input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+/*
+  * Ohyeah and the last one should go the other direction
+  */
+#menuToggle input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, 0px);
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+#menuToggle input:checked~span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, 1px);
+  margin-top: 3px;
+}
+
+
+/* ********************************************************************************************** */
+
+
+
+
+
+
+
+
+
+/* 
+.a_beautiful_mess_menuV2 .paginas ul li:first-child {
+  opacity: .4;
+  text-transform: uppercase;
+  cursor: pointer;
+} */
+
+
+
+
+
+
+.a_beautiful_mess_menuV2 .paginas ul li a {
+  font-size: 1rem;
+}
+
+
+.a_beautiful_mess_menuV2 .logo ul ,
+  .a_beautiful_mess_menuV2 .paginas ul {
+  list-style-type: none;
+  /*  overflow: hidden; */
+  background-color: transparent;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+
+
+
+
+/* @media (min-height: 0px) */
+
+
+/* Extra small devices (phones, 600px and down)  */
+@media only screen and (max-width: 600px) {
+
+
+  .menuLogoWrapper{
+    width:40dvw;
+    z-index:101;
+     margin-top:5dvw;
+     margin-left:7.5dvw
+  }
+  
+
+.a_beautiful_mess_menuV2 #usuarioToggle #menuUsuario .paginasUsuario,
+.a_beautiful_mess_menuV2 #menuToggle #menu .paginasBurger {
+  margin-top: 58.75dvw;
+  position: relative;
+  /*  margin-bottom: 13.288rem; */
+}
+
+  .audio-lottie-svg{
+    width:10dvw;
+    height: 10dvw;
+  }
+
+  .a_beautiful_mess_menuV2 .logo ul li a {
+    display: none;
+  }
+  .a_beautiful_mess_menuV2 .paginas ul li a {
+    white-space: nowrap;
+    color:white;
+    text-align: center;
+    margin: 0.7291666666666667dvw 0.7333333333333333dvw;
+    text-decoration: none;
+    /*   font-weight: 600; */
+    font-family: MillionaireRoman;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+  
+
+  /* **********************************************************************************************************
+  **********************************************************************************************************
+  **********************************************************************************************************
+  **********************************************************************************************************
+  ********************************************************************************************************** */
+  .a_beautiful_mess_menuV2 .menuUsuarioDskImg {
+    width: 10dvw;
+    margin-left: 10dvw;
+    top: 10dvw;
+    position: absolute;
+}
+
+.a_beautiful_mess_menuV2 #menuUsuarioDsk {
+  height: 50dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.a_beautiful_mess_menuV2 #menuUsuarioDsk .paginasUsuario li a {
+font-family: boogieSans;
+color: var(--playeras-primary-color);
+white-space: nowrap;
+text-decoration: none;
+/* font-size: 1.333rem; */
+font-size: 2.509267431597529dvh;
+line-height: 5.648720211827008dvh;
+letter-spacing: .1rem;
+/* opacity: 0; */
+text-transform: uppercase;
+cursor: pointer;
+}
+
+  .a_beautiful_mess_menuV2 .logo ,
+.a_beautiful_mess_menuV2 .session ,
+  .a_beautiful_mess_menuV2 .paginas { 
+  display: flex;/* 
+  align-items: center; */
+}
+  .a_beautiful_mess_menuV2 .sessionDsk  {
+    display: none;
+  }
+  
+  .a_beautiful_mess_menuV2 {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+   /*  background: rgb(163, 213, 205); */
+    /* height: 7.04225352112676dvh; */
+height: 12.5dvw;
+
+
+    min-height: 42px;
+    /*  position: absolute;
+    top: 0rem;
+    left: 0; */
+    z-index: 101;
+    /*    padding: 1.5rem 2rem; */
+    /*     padding: 7.04225352112676dvh 10dvw 0dvh 7.5dvw; */
+  }
+
+  .a_beautiful_mess_menuV2 .logo {
+    margin-top:10px;
+    margin-bottom: 1.408450704225352dvh;
+    margin-left: 7.5dvw;
+  }
+  
+  .a_beautiful_mess_menuV2 .logo svg {
+    display: none;
+    height: 7.5dvw;
+    width: 22.5dvw;
+  }
+
+  .a_beautiful_mess_menuV2 .paginas {
+    display: none;
+  }
+
+  .a_beautiful_mess_menuV2 .session {
+    display: flex;
+    /* display: block; */
+    position: relative;
+    margin-top:20px;
+    margin-bottom: 1.408450704225352dvh;
+    padding: 0dvh 7.5dvw 0dvh 0dvw;
+    /*   margin-top: 1.408450704225352dvh;
+      margin-bottom: 1.408450704225352dvh;
+      padding: 0dvh 7.5dvw 0dvh 0dvw;
+      */
+  }
+
+  .a_beautiful_mess_menuV2 .session .btnUsuario {
+    display: block;
+    position: relative;
+  }
+
+  .a_beautiful_mess_menuV2 .session .btnUsuario svg,
+  .a_beautiful_mess_menuV2 .session .btnUsuario img,
+  .a_beautiful_mess_menuV2 .session a img,
+  .a_beautiful_mess_menuV2 .session a svg,
+  .a_beautiful_mess_menuV2 .session  .btnBurguer svg ,
+  .numbers_limited_pie .social ul li svg ,
+    .a_beautiful_mess_menuV2 .session  .btnBurguer img { 
+    /*   height: 21px;
+  margin-top: 0.704225dvh; */
+   /*  opacity: 0.15; */
+/*     width: 20px;
+    height: 20px!important; */
+z-index: 1;
+
+    width: 5dvw;
+    height: 5dvw!important;
+    /*  margin-right: 2.5dvw; */
+    /* margin-top: 0.440141dvh; */
+  }
+
+
+
+  .a_beautiful_mess_menuV2 .session  .btnBurguer .menu-lottie-svg {  
+
+    width: 7.5dvw;
+    height: 7.5dvw!important; 
+  }
+
+  .a_beautiful_mess_menuV2 .session  .btnBurguer  .equis { 
+    width: 16px;
+    height: 16px;
+  }
+  .numbers_limited_pie #menu .social ul li svg ,
+  .a_beautiful_mess_menuV2 #menu .session  .btnBurguer svg { 
+    width: 24px;
+  }
+
+  .a_beautiful_mess_menuV2 .session .btnUsuario input,
+  .a_beautiful_mess_menuV2 .session  #menuToggle input {
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  z-index: 101;
+}
+
+.a_beautiful_mess_menuV2 .session .btnBurguer {
+/*   display: block;
+  position: relative;
+
+    display: block; */
+    position: relative;
+    display: flex;/* 
+    align-items: center;
+ */
+}
+
+
+.a_beautiful_mess_menuV2 .session .badge {
+  background-color: var(--playeras-second-color);
+  color: white;
+  /*   padding: 2px 4px; */
+  font-size: 3.75dvw;
+  height: 5dvw;
+  width: 5dvw;
+  text-align: center;
+  border-radius: 100%;
+
+}
+
+
+.a_beautiful_mess_menuV2 #usuarioToggle #menuUsuario .paginasUsuario li a,
+.a_beautiful_mess_menuV2 #menuToggle #menu .paginasBurger li a {
+  font-family: MillionaireRoman;
+  color: white;
+
+  white-space: nowrap;
+  text-decoration: none;
+  /*    font-size: 1.333rem; */
+  font-size: 5dvw;
+  line-height: 7.5dvw;
+  letter-spacing: .1rem;
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+
+.a_beautiful_mess_menuV2 #menuToggle #menu .paginasBurger #info li a,
+.a_beautiful_mess_menuV2 #menuToggle #menu .paginasBurger #word li a {
+  line-height: 6.25dvw;
+  font-size: 3.75dvw;
+}
+  /* **********************************************************************************************************
+  **********************************************************************************************************
+  **********************************************************************************************************
+  **********************************************************************************************************
+  ********************************************************************************************************** */
+
+
+
+
+
+
+
+
+
+  /* .a_beautiful_mess_menuV2 .session svg:nth-child(2)
+ {
+  margin-right: 120px;
+ } */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)  */
+@media only screen and (min-width: 600px) {
+
+.menuLogoWrapper{
+  width:40dvw;
+  z-index:101;
+   margin-top:4.225352112676056dvh;
+   margin-left:8.602150537634409dvw
+}
+
+  
+
+.a_beautiful_mess_menuV2 #usuarioToggle #menuUsuario .paginasUsuario,
+.a_beautiful_mess_menuV2 #menuToggle #menu .paginasBurger {
+  margin-top: 45.77822580645161dvw;
+  position: relative;
+  /*  margin-bottom: 13.288rem; */
+}
+
+  .audio-lottie-svg{
+    width:6.451612903225806dvw;
+    height: 6.451612903225806dvw;
+  }
+
+  .a_beautiful_mess_menuV2 .logo ul li a {
+    display: none;
+  }
+
+
+  .a_beautiful_mess_menuV2 .paginas ul li a {
+    white-space: nowrap;
+    color:white;
+    text-align: center;
+    margin: 0.7291666666666667dvw 0.7333333333333333dvw;
+    text-decoration: none;
+    /*   font-weight: 600; */
+    font-family: MillionaireRoman;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+  
+  /* **********************************************************************************************************
+  **********************************************************************************************************
+  **********************************************************************************************************
+  **********************************************************************************************************
+  ********************************************************************************************************** */
+  .a_beautiful_mess_menuV2 .logo ,
+  .a_beautiful_mess_menuV2 .session ,
+    .a_beautiful_mess_menuV2 .paginas { 
+    display: flex;
+    align-items: center;
+    /* 
+    */
+  }
+  .a_beautiful_mess_menuV2 .menuUsuarioDskImg {
+    width: 10dvw;
+    margin-left: 6.451612903225806dvw;
+    top: 6.451612903225806dvw;
+    position: absolute;
+}
+
+.a_beautiful_mess_menuV2 #menuUsuarioDsk {
+  height: 50dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.a_beautiful_mess_menuV2 #menuUsuarioDsk .paginasUsuario li a {
+font-family: boogieSans;
+color: var(--playeras-primary-color);
+white-space: nowrap;
+text-decoration: none;
+/* font-size: 1.333rem; */
+font-size: 2.509267431597529dvh;
+line-height: 5.648720211827008dvh;
+letter-spacing: .1rem;
+/* opacity: 0; */
+text-transform: uppercase;
+cursor: pointer;
+}
+
+  .a_beautiful_mess_menuV2 .sessionDsk  {
+    display: none;
+  }
+
+
+  .a_beautiful_mess_menuV2 {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100dvw;
+    background: rgb(163, 213, 205);
+    height: 80px;
+    /* height: 5.648720211827008dvh; */
+    min-height: 42px;
+    /*  position: absolute;
+    top: 0rem;
+    left: 0; */
+    z-index: 101;
+  }
+
+  .a_beautiful_mess_menuV2 .logo {
+    margin-top: 1.408450704225352dvh;
+    /*    margin-bottom: 1.408450704225352dvh; */
+    margin-left: 40px;
+  }
+  
+  .a_beautiful_mess_menuV2 .logo svg {
+    display: none;
+    /* height: 7.5dvw; */
+    width: 17.20430107526882dvw;
+  }
+
+  .a_beautiful_mess_menuV2 .paginas {
+    display: none;
+  }
+
+  .a_beautiful_mess_menuV2 .session {
+    display: flex;
+    /* display: block; */
+    position: relative;
+    margin-top: 4.301075268817204dvw;
+/*     margin-bottom: 1.408450704225352dvh; */
+    padding: 0dvh 48px 0dvh 0dvw;
+    /* margin-bottom: 1.408450704225352dvh; */
+    /*  
+     margin-top: 1.408450704225352dvh;
+      padding: 0dvh 7.5dvw 0dvh 0dvw;
+      */
+  }
+
+  .a_beautiful_mess_menuV2 .session .btnUsuario {
+    display: block;
+    position: relative;
+  }
+  .a_beautiful_mess_menuV2 .session .btnUsuario svg,
+  .a_beautiful_mess_menuV2 .session .btnUsuario img,
+  .a_beautiful_mess_menuV2 .session a svg,
+  .a_beautiful_mess_menuV2 .session a img,
+  .a_beautiful_mess_menuV2   .sessionDsk img,
+  .a_beautiful_mess_menuV2   .sessionDsk svg,
+  .a_beautiful_mess_menuV2 .session  .btnBurguer svg,
+    .a_beautiful_mess_menuV2 .session  .btnBurguer img { 
+/*     width: 32px;
+    height: 32px; */
+
+
+    width: 4.301075268817204dvw;
+    height: 4.301075268817204dvw;
+
+
+
+    
+    /*   height: 21px;
+  margin-top: 0.704225dvh; */
+  /*   opacity: 0.15; */
+    /*  margin-right: 2.5dvw; */
+    margin-top: 0.440141dvh;
+    cursor: pointer;
+  }
+
+  .a_beautiful_mess_menuV2 .session  .btnBurguer svg { 
+    width:40px ;
+    height:40px ;
+    z-index: 1;
+  }
+
+  .a_beautiful_mess_menuV2 .session  #menuToggle svg { 
+    width:4.301075268817204dvw ;
+    height:4.301075268817204dvw ;
+  }
+
+  .a_beautiful_mess_menuV2 .session .btnUsuario input,
+  .a_beautiful_mess_menuV2 .session  #menuToggle input {
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  z-index: 101;
+}
+
+.a_beautiful_mess_menuV2 .session .btnBurguer {
+  display: flex;
+  position: relative;
+
+}
+
+
+.a_beautiful_mess_menuV2 .session .badge {
+  background-color: var(--playeras-second-color);
+  color: white;
+  /*   padding: 2px 4px; */
+  font-size: 3.75dvw;
+  height: 5dvw;
+  width: 5dvw;
+  text-align: center;
+  border-radius: 100%;
+
+}
+
+.a_beautiful_mess_menuV2 #usuarioToggle #menuUsuario .paginasUsuario li a,
+.a_beautiful_mess_menuV2 #menuToggle #menu .paginasBurger li a {
+  font-family: MillionaireRoman;
+  color: white;
+
+  white-space: nowrap;
+  text-decoration: none;
+  /*    font-size: 1.333rem; */
+  font-size: 2.509267431597529dvh;
+  line-height: 6.451612903225806dvw;
+  letter-spacing: .1rem;
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+.a_beautiful_mess_menuV2 #menuToggle #menu .paginasBurger #info li a,
+.a_beautiful_mess_menuV2 #menuToggle #menu .paginasBurger #word li a {
+  line-height:4.838709677419355dvw;
+  font-size: 2.866666666666667dvw;
+}
+  /* **********************************************************************************************************
+  **********************************************************************************************************
+  **********************************************************************************************************
+  **********************************************************************************************************
+  ********************************************************************************************************** */
+}
+
+/* Large devices (laptops/desktops, 992px and up)   */
+@media only screen and (min-width: 992px) {
+
+  .audio-lottie-svg{
+    width:3.333333333333333dvw;
+    height: 3.333333333333333dvw;
+  }
+
+
+
+
+  .a_beautiful_mess_menuV2 .logo ul li a ,
+    .a_beautiful_mess_menuV2 .paginas ul li a {
+    white-space: nowrap;
+    color:white;
+    text-align: center;
+    margin: 0.7291666666666667dvw 0.7333333333333333dvw;
+    text-decoration: none;
+    /*   font-weight: 600; */
+    font-family: MillionaireRoman;
+    line-height: 1.666666666666667dvw;
+    text-transform: uppercase;
+  }
+  .a_beautiful_mess_menuV2 .logo ul li a {
+    display: initial;
+  }
+
+  .a_beautiful_mess_menuV2 .logo svg {
+    height: 2.083333333333333dvw;
+    width: 2.083333333333333dvw;
+    transform: translate3d(0px, 0px, 0px);
+    content-visibility: visible;
+    vertical-align: middle;
+
+}
+  /* **********************************************************************************************************
+  **********************************************************************************************************
+  **********************************************************************************************************
+  **********************************************************************************************************
+  ********************************************************************************************************** */
+  .a_beautiful_mess_menuV2 .logo ,
+.a_beautiful_mess_menuV2 .session ,
+  .a_beautiful_mess_menuV2 .paginas { 
+  display: flex;
+  align-items: center;
+}
+    .a_beautiful_mess_menuV2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background: transparent;
+    height: 5.555555555555556dvh;
+    min-height: 2.1875dvw;
+    padding: 2.604166666666667dvw 0 ;
+    /*  position: absolute;
+    top: 0rem;
+    left: 0; */
+    z-index: 101;
+    
+ 
+  }
+
+  .a_beautiful_mess_menuV2 .logo {
+    margin-top: initial;
+    margin-bottom: initial;
+    margin-left: 5dvw;
+    margin-right: 6.666666666666667dvw; 
+  }
+
+  .a_beautiful_mess_menuV2 .logo svg {
+   /*  height: 4.225352112676056dvw; */
+    /* width: 10dvw; */
+    display: initial;
+  }
+
+  /* **********************************************************************************************************
+  **********************************************************************************************************
+  **********************************************************************************************************
+  **********************************************************************************************************
+  ********************************************************************************************************** */
+ 
+
+
+
+  .a_beautiful_mess_menuV2 .session .btnUsuario svg,
+  .a_beautiful_mess_menuV2 .session .btnUsuario img,
+  .a_beautiful_mess_menuV2 .session a svg,
+  .a_beautiful_mess_menuV2 .session a img,
+  .a_beautiful_mess_menuV2   .sessionDsk img,
+  .a_beautiful_mess_menuV2 .session  .btnBurguer svg,
+    .a_beautiful_mess_menuV2 .session  .btnBurguer img { 
+    width: 1.666666666666667dvw;
+    height: 1.666666666666667dvw;
+    /*   height: 21px;
+  margin-top: 0.704225dvh; */
+    opacity: 0.15;
+    /*  margin-right: 2.5dvw; */
+    margin-top: 0.440141dvh;
+    cursor: pointer;
+  }
+
+
+
+.a_beautiful_mess_menuV2 .sessionDsk .badge {
+  background-color: var(--playeras-second-color);
+  color: white;
+  /*   padding: 2px 4px; */
+  font-size: 0.8333333333333333dvw;
+  height: 1.25dvw;
+  width: 1.25dvw;
+  text-align: center;
+  border-radius: 100%;
+
+}
+
+  .a_beautiful_mess_menuV2 .logo ul li a ,
+    .a_beautiful_mess_menuV2 .paginas ul li a {
+    font-size: 1.110833333333333dvw;
+    font-weight: 550;
+  }
+
+
+
+
+
+  .a_beautiful_mess_menuV2  .paginas #infoD li a,
+.a_beautiful_mess_menuV2  .paginas #wordD li a {
+  line-height: 1.5dvw;
+  font-size: 0.8333333333333333dvw;
+}
+
+/*   .a_beautiful_mess_menuV2 .paginas {
+    display: flex;
+    padding-right: 5dvw;
+    width: 45dvw;
+    justify-content: space-between;
+  } */
+
+/*   
+    .a_beautiful_mess_menuV2 .paginas ul  li:nth-child(2){
+    margin-right: 2.083333333333333dvw;
+  } */
+
+  .a_beautiful_mess_menuV2 .logo ul ,
+    .a_beautiful_mess_menuV2 .paginas ul {
+    list-style-type: none;
+    /*  overflow: hidden; */
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 0px;
+  }
+
+ 
+  .a_beautiful_mess_menuV2 .session  {
+    display: none;
+  }
+
+
+
+
+  
+  .a_beautiful_mess_menuV2 .sessionDsk {
+    display: flex; 
+    position: relative;
+    margin-top: initial;
+    margin-bottom: initial;
+    padding: 0dvh  0dvh 0dvw 1.666666666666667dvw; 
+  }
+
+
+  .a_beautiful_mess_menuV2 #menuUsuarioDsk {
+    height: 50dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.a_beautiful_mess_menuV2 #menuUsuarioDsk .paginasUsuario li a {
+  font-family: boogieSans;
+  color: var(--playeras-primary-color);
+  white-space: nowrap;
+  text-decoration: none;
+  /* font-size: 1.333rem; */
+  font-size: 2.509267431597529dvh;
+  line-height: 5.648720211827008dvh;
+  letter-spacing: .1rem;
+  /* opacity: 0; */
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.a_beautiful_mess_menuV2 .menuUsuarioDskImg {
+  width: 5dvw;
+  margin-left: 2.5dvw;
+  top: 2.5dvw;
+  position: absolute;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+ Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
+
+  Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {...}
+
+  Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}
+
+  Large devices (laptops/desktops, 992px and up)  
+@media only screen and (min-width: 992px) {...}
+
+ Extra large devices (large laptops and desktops, 1200px and up)  
+@media only screen and (min-width: 1200px) {...} */

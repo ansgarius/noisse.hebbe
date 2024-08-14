@@ -1,0 +1,116 @@
+	.hebbe_drop-zone .drop-zone__input {
+		display: none;
+	}
+	  
+	.hebbe_drop-zone  .drop-zone__thumb {
+		width: 10dvw;
+		height: 10.83333333333333dvw;
+		border-radius: 10px;
+		overflow: hidden;
+		background-color: #cccccc;
+		background-size: cover;
+		position: relative;
+		margin:  1.666666666666667dvw;
+	}
+	  
+	.hebbe_drop-zone  .drop-zone__thumb::after {
+		content: attr(data-label);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 5px 0;
+		color: var(--third-color);
+		background: rgba(0, 0, 0, 0.75);
+		font-size: 0.625dvw;
+		text-align: center;
+	}
+	  
+	
+	/* Extra small devices (phones, 600px and down)  */
+	@media only screen and (max-width: 600px) { 
+	 
+		.hebbe_drop-zone   .drop-zone {
+			width: 100%;
+			height: 40dvw;
+			padding: 1.666666666666667dvw;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			font-family:var(--primary-font);
+		/*  background: var(--second-color); */
+			font-size: 2.5dvw;
+			cursor: pointer;
+			color: var(--second-color);
+			border: 0.2083333333333333dvw dotted var(--primary-color);
+			border-radius: 0.8333333333333333dvw;
+		}
+		
+		.hebbe_drop-zone   svg{
+			width:10dvw;	
+		}
+	}
+	
+	/* Small devices (portrait tablets and large phones, 600px and up)  */
+	@media only screen and (min-width: 600px) {
+	 
+/* 	   	.drop-zone {
+			width: 100%;
+			min-height: 40dvw;
+			padding: 1.666666666666667dvw;
+			display: flex; 
+		   flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			font-family:var(--primary-font); 
+			font-size: 2.5dvw;
+			cursor: pointer;
+			color: var(--second-color);
+			border: 0.2083333333333333dvw dotted var(--primary-color);
+			border-radius: 0.8333333333333333dvw;
+		  } */
+		
+		   .hebbe_drop-zone   svg{
+		
+			width:10dvw;
+			
+			}
+	}
+	/* Large devices (laptops/desktops, 992px and up)   */
+	@media only screen and (min-width: 992px) {
+	 
+   .hebbe_drop-zone	.drop-zone {
+		/* width: 41.66666666666667dvw;
+		height: 10.83333333333333dvw; */
+		padding: 1.666666666666667dvw;
+		display: flex;
+		flex-wrap: wrap;
+		/* flex-direction: column; */
+		align-items: center;
+		justify-content: center; 
+		font-family:var(--primary-font);
+	   /*  background: var(--second-color); */
+		font-size: 0.8333333333333333dvw;
+		cursor: pointer;
+		color: var(--second-color);
+		border: 0.2083333333333333dvw dotted var(--primary-color);
+		border-radius: 0.8333333333333333dvw;
+		overflow: auto;
+		text-align: center;
+	  }
+	
+	    .hebbe_drop-zone  svg{
+	
+		width:2.083333333333333dvw;
+		
+		}
+	}
+
+		
+	  
+.hebbe_drop-zone	.drop-zone--over {
+		border-style: solid;
+	  }

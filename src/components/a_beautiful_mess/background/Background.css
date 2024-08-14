@@ -1,0 +1,60 @@
+.noiseBackGroundComponent {
+  position: absolute;
+/*   top: 0;
+  left: 0; */
+  width: 100vw;
+  height: 100vh;
+  background-image: url( ../../../../public/assets/img/bignoise-min.png );
+  background-size: 200px 200px; 
+  animation: flip .8s steps(1) infinite;
+  mix-blend-mode: multiply;
+  opacity: 1;
+/*   z-index: 100; */
+  pointer-events: none;
+}
+
+
+@-webkit-keyframes flip {
+  0% {
+      -webkit-transform: scaleX(1) scaleY(1);
+      transform: scaleX(1) scaleY(1)
+  }
+  25% {
+      -webkit-transform: scaleX(1) scaleY(-1);
+      transform: scaleX(1) scaleY(-1)
+  }
+  50% {
+      -webkit-transform: scaleX(-1) scaleY(-1);
+      transform: scaleX(-1) scaleY(-1)
+  }
+  75% {
+      -webkit-transform: scaleX(-1) scaleY(1);
+      transform: scaleX(-1) scaleY(1)
+  }
+  100% {
+      -webkit-transform: scaleX(-1) scaleY(1);
+      transform: scaleX(-1) scaleY(1)
+  }
+}
+@keyframes flip {
+  0% {
+      -webkit-transform: scaleX(1) scaleY(1);
+      transform: scaleX(1) scaleY(1)
+  }
+  25% {
+      -webkit-transform: scaleX(1) scaleY(-1);
+      transform: scaleX(1) scaleY(-1)
+  }
+  50% {
+      -webkit-transform: scaleX(-1) scaleY(-1);
+      transform: scaleX(-1) scaleY(-1)
+  }
+  75% {
+      -webkit-transform: scaleX(-1) scaleY(1);
+      transform: scaleX(-1) scaleY(1)
+  }
+  100% {
+      -webkit-transform: scaleX(-1) scaleY(1);
+      transform: scaleX(-1) scaleY(1)
+  }
+}

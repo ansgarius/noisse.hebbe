@@ -1,0 +1,27 @@
+.a_beautiful_mess_menuLayoutMovileTablet#menu
+  {
+  position: fixed;
+
+  width: 100dvw;
+  /* height:91dvh ;  */
+
+  /*  transform: translate(-205dvw,-.6rem);  */
+  /*     transition: transform .5s   cubic-bezier(0.77,0.2,0.05,1.0) ; */
+  transition: transform .5s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+
+  /* margin-left: 2rem;
+    margin-bottom: 13.288rem; */
+  /*     
+    align-items: center;
+    
+    */
+  list-style-type: none;
+ /*  background: rgb(163, 213, 205); */
+  padding-left: 15dvw;
+  margin: 0;
+}

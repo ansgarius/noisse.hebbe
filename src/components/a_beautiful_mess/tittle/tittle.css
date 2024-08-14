@@ -1,0 +1,84 @@
+
+
+.a_beautiful_mess_tittle  a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* Extra small devices (phones, 600px and down)  */
+@media only screen and (max-width: 600px) {
+        .a_beautiful_mess_tittle span {
+        color: #fff;
+        cursor: pointer;
+        font-family: MillionaireRoman;
+        font-size: 5dvw;
+        font-weight: 400;
+        letter-spacing: .8px;
+        line-height: 5dvw;
+        pointer-events: all;
+    }
+
+    .a_beautiful_mess_tittle {
+  
+        left: 0;
+      /*   mix-blend-mode: difference; */
+        pointer-events: none;
+        position: fixed;
+        text-align: center;
+        top: 2rem;
+        width: 100%;
+        z-index: 200;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)  */
+@media only screen and (min-width: 600px) {
+        .a_beautiful_mess_tittle span {
+        color: #fff;
+        cursor: pointer;
+        font-family: MillionaireRoman;
+        font-size: 3.821236559139785dvw;
+        font-weight: 400;
+        letter-spacing: .8px;
+        line-height: 40px;
+        pointer-events: all;
+    }
+    .a_beautiful_mess_tittle {
+  
+        left: 0;
+      /*   mix-blend-mode: difference; */
+        pointer-events: none;
+        position: fixed;
+        text-align: center;
+        top: 6.451612903225806dvw;
+        width: 100%;
+        z-index: 200;
+    }
+}
+    
+/* Large devices (laptops/desktops, 992px and up)   */
+@media only screen and (min-width: 992px) {
+        .a_beautiful_mess_tittle span {
+        color: #fff;
+        cursor: pointer;
+        font-family: MillionaireRoman;
+        font-size: 1.480729166666667dvw;
+        font-weight: 400;
+        letter-spacing: .8px;
+        line-height: 40px;
+        pointer-events: all;
+    }
+    .a_beautiful_mess_tittle {
+  
+        left: 0;
+      /*   mix-blend-mode: difference; */
+        pointer-events: none;
+        position: fixed;
+        text-align: center;
+        top: 2rem;
+        width: 100%;
+        z-index: 200;
+    }
+}

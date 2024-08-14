@@ -1,0 +1,93 @@
+.a_beautiful_mess_userMenu #menuUsuarioDsk {
+    height: 50dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+
+
+    
+/* Extra small devices (phones, 600px and down)  */
+@media only screen and (max-width: 600px) {
+    .a_beautiful_mess_userMenu .menuUsuarioDskImg {
+        width: 10dvw;
+        margin-left: 10dvw;
+        top: 10dvw;
+        position: absolute;
+    }
+
+    .a_beautiful_mess_userMenu #menuUsuarioDsk .paginasUsuario li a {
+        font-family: boogieSans;
+        color: var(--playeras-primary-color);
+        white-space: nowrap;
+        text-decoration: none;
+        /* font-size: 1.333rem; */
+        font-size: 2.509267431597529dvh;
+        line-height: 5.648720211827008dvh;
+        letter-spacing: .1rem;
+        /* opacity: 0; */
+        text-transform: uppercase;
+        cursor: pointer;
+        }
+
+        
+ 
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up)  */
+@media only screen and (min-width: 600px) {
+    .a_beautiful_mess_userMenu .menuUsuarioDskImg {
+        width: 10dvw;
+        margin-left: 6.451612903225806dvw;
+        top: 6.451612903225806dvw;
+        position: absolute;
+    }
+    
+    .a_beautiful_mess_userMenu #menuUsuarioDsk .paginasUsuario li a {
+        font-family: boogieSans;
+        color: var(--playeras-primary-color);
+        white-space: nowrap;
+        text-decoration: none;
+        /* font-size: 1.333rem; */
+        font-size: 2.509267431597529dvh;
+        line-height: 5.648720211827008dvh;
+        letter-spacing: .1rem;
+        /* opacity: 0; */
+        text-transform: uppercase;
+        cursor: pointer;
+        }
+
+ 
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up)   */
+@media only screen and (min-width: 992px) {
+ 
+.a_beautiful_mess_userMenu .menuUsuarioDskImg {
+    width: 10dvw;
+    height: 10dvw;
+    margin-left: 2.5dvw;
+    top: 2.5dvw;
+    position: absolute;
+  }
+
+  .a_beautiful_mess_userMenu #menuUsuarioDsk .paginasUsuario li a {
+    font-family: var(--third-font);
+    color: var(--second-color);
+    white-space: nowrap;
+    text-decoration: none;
+    /* font-size: 1.333rem; */
+    font-size: 2.509267431597529dvh;
+    line-height: 5.648720211827008dvh;
+    letter-spacing: .1rem;
+    /* opacity: 0; */
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,24 @@
+.fieldsetComponent  {
+    border-color: var(--primary-color);
+    border-radius: 2.083333333333333dvw;
+    padding: 0.8333333333333333dvw;
+   /*  margin: 0.8333333333333333dvw;  */
+    background: var(--third-color);
+
+    display: grid;
+grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+grid-gap: 1rem;  
+  }
+  
+ .fieldsetComponent legend {
+    background-color:var(--third-color);
+    font-family: var(--primary-font);
+/*     border: 1px solid var(--second-color); 
+    border-radius: 4px;
+*/
+    border: none;
+    color: var(--primary-color);
+    font-size: 0.8333333333333333dvw; 
+    padding:  0.2083333333333333dvw 0.4166666666666667dvw ;
+    width: auto;
+  }
