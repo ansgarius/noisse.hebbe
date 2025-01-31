@@ -450,7 +450,7 @@ loader.load(
       this.uniforms.uImageLargeRes.value.y =
         textureSet.large.texture.image.naturalHeight;
     }
-    this.itemsWrapper.style.zIndex = 0;
+    this.itemsWrapper.style.zIndex = 3;
     this.container.style.zIndex = 2;
 
     if (this.options.onToFullscreenStart)

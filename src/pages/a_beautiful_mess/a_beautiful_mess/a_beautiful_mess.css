@@ -356,15 +356,20 @@
         .row {
          /*    margin-left: -3rem;
         margin-right: -3rem; */
-   /*  background: lightgray; */
-    display: flex;
-            flex-wrap:wrap;
+   /*  background: lightgray; */ 
+           /*  flex-wrap:wrap; */
  /*    
     justify-content: space-between; */
+
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+   
 }
 
 .section {
-    min-height: 140vh;
+    height: 343.75vw;
+    min-height: 343.75vw;
     width: 100%;
 }
     }
@@ -378,8 +383,10 @@
         margin-right: -3rem; */
    /*  background: lightgray; */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+   /*  justify-content: space-between; */
 }
 .py-main {
     padding-bottom: 10.72916666666667dvw;
@@ -388,7 +395,8 @@
 
 
 .section {
-    min-height: 100vh;
+    height: 190.4569892473118dvw;
+    min-height: 190.4569892473118dvw;
     width: 100%;
 }
     }
@@ -408,13 +416,20 @@
         margin-right: -3rem; */
     /* background: lightgray; */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
+   /*  flex-wrap: wrap; */
+ /*    justify-content: space-between; */
+ height: 100%;
 }
 
 .section {
-    min-height: 100vh;
-    width: 100%;
+    height: 102.6041666666667dvw;
+    min-height: 102.6041666666667dvw;
+    width: 100dvw;
+ 
+      /*   margin-bottom: 10.72916666666667dvw;
+        margin-top: 10.72916666666667dvw; */
+    
 }
     }
 

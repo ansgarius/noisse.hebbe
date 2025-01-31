@@ -72,14 +72,18 @@ const PhotoGalery=()=>{
   const headers= {
     Authorization: 'Bearer ' + localStorage.getItem('token')  
   }
+  
+
+
   const [cargando,setCargando] = useState(false);
   const [error,setError] = useState(false);
+  const [errorMessage,setErrorMessage] = useState(false);
   const [mainBg,setMainBg] = useState('white');
 
   //almacena las fotos de las galerias
   const [fotos, setFotos] = useState(null);
   //const [direction, setDirection] = useState('');
-let direction=''
+  let direction=''
 
   
   const [mouseOver, setMouseOver] = useState(0);
@@ -120,31 +124,6 @@ let direction=''
     }); 
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
   const threeJsZoomAnimation=(elIndex)=>{
  
     
@@ -155,7 +134,7 @@ let direction=''
 	const thumbs = [...itemsWrapper.querySelectorAll("img.grid__item-img:not(.grid__item-img--large)")];
 	const fullviewItems = [...document.querySelectorAll(".fullview__item")];
 	const backToGridCtrl = document.querySelector(".fullview__close");
-	const transitionEffectDuration = 1.2;
+	const transitionEffectDuration = 2;
 
 
 
@@ -271,31 +250,6 @@ let direction=''
     
 	});
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   //estado de montaje consulta de proyectos
   useEffect(()=>{
@@ -469,7 +423,7 @@ const allImage=gsap.utils.toArray(".image__container")
         //first zoom
 
 
-        function showDetails(item) {
+        function showDetails(item,index) {
           
           if (activeItem) { // someone could click on an element behind the open details panel in which case we should just close it.
             return hideDetails();
@@ -488,6 +442,7 @@ const allImage=gsap.utils.toArray(".image__container")
         
             Flip.from(state, {
               duration: 0.5,
+              delay:.1,
               ease: "power2.inOut",
               scale: true,
               onComplete: () => gsap.set(details, {overflow: "auto"}) // to permit scrolling if necessary
@@ -510,6 +465,22 @@ const allImage=gsap.utils.toArray(".image__container")
           setMainBg(data.bgColor)
           detailSecondary.innerText = data.subtitle;
           detailDescription.innerText = data.text;
+    gsap.to('.clapat-counter-intro', {autoAlpha: 0, yPercent: 30 });
+    gsap.to('.crosshair', {autoAlpha: 0, yPercent: 30 });
+    gsap.to('.photoGaleryFooterSecction', {autoAlpha: 0, yPercent: 30 });
+
+    
+    gsap.to('.photoGaleryFooterArrows', {autoAlpha: 0, yPercent: 30 });
+
+    
+    gsap.to('.counter', {autoAlpha: 0, yPercent: 30});
+
+    allImage.forEach((item,indexEl) => {
+      if (indexEl!=index)
+        gsap.to(item, {autoAlpha: 0, yPercent: 500, scale:.1,duration:.5});
+
+    });
+    
         
           // stagger-fade the items out from the one that was selected in a staggered way (and kill the tween of the selected item)
        //   gsap.to(items, {opacity: 0.3, stagger: { amount: 0.7, from: items.indexOf(item), grid: "auto"}}).kill(item);
@@ -522,16 +493,22 @@ const allImage=gsap.utils.toArray(".image__container")
       function hideDetails(e) {
   
       if (e.target.getAttribute("name")=='slider-zoom-wrapperImage') {
-
+        
+    gsap.to(detailSecondary, {autoAlpha: 0, yPercent: 300, duration:1});
+    gsap.to(detailDescription, {autoAlpha: 0, yPercent: 300, duration:1});
+        
+         
  
-        return
-       let elBody=document.querySelector('body');
-      
-       elBody.innerHTML=elBody.innerHTML+'<div class="temporary-hero"><div class="outer content-full-width text-align-center"><div class="inner"></div></div></div>'
-    
-       gsap.to(".slider-zoom-wrapper .secondary, .slider-zoom-wrapper .description", { 
-        duration: 0.3, y:30,  opacity:0, delay:0, stagger:0, ease:'Power2.easeIn'});
-       gsap.to(" .slide-link", { duration: 0.3, opacity:0, scale:0.8, delay:0, ease:'Power2.easeIn' });
+        
+        gsap.to(".slider-zoom-wrapper .title", { 
+          duration: 1,    delay:1, 
+        
+          left: "50%",
+          xPercent: -50
+        
+        });
+          gsap.to(" .slide-link", { duration: 0.3, opacity:0, scale:0.8, delay:0, ease:'Power2.easeIn' });
+          return
 
        setTimeout( function(){
     //		$("body").addClass("show-loader");
@@ -600,6 +577,24 @@ const allImage=gsap.utils.toArray(".image__container")
       tl.set(details, {overflow: "hidden", background:'white'})
         .to(detailContent, {yPercent: 100,opacity:0})
         .to(allImage, {opacity: 1, stagger: {amount: 0.7, from: allImage.indexOf(activeItem), grid: "auto"}})
+
+    .to('.clapat-counter-intro', {autoAlpha: 1, yPercent: 0, stagger: 0.04},"<")
+    .to('.crosshair', {autoAlpha: 1, yPercent: 0, stagger: 0.04},"<")
+    .to('.photoGaleryFooterSecction', {autoAlpha: 1, yPercent: 0, stagger: 0.04},"<")
+    
+    .to('.photoGaleryFooterArrows', {autoAlpha: 1, yPercent: 0, stagger: 0.04},"<")
+
+
+    .to('.counter', {autoAlpha: 1, yPercent: 0},"<");
+
+
+    
+    allImage.forEach((item) => {
+
+        gsap.to(item, {autoAlpha: 1, yPercent: 0, scale:1 });
+
+    });
+
       //  .to(".app", {backgroundColor: "#fff"}, "<");
     
       // animate from the original state to the current one.
@@ -631,7 +626,7 @@ setMainBg('white')
         
       // Add click listeners
      // gsap.utils.toArray('.image__container').forEach(item => item.addEventListener('click', () => showDetails(item)));
-      allImage.forEach(item => item.addEventListener('click', () => showDetails(item)));
+      allImage.forEach((item,indexEl) => item.addEventListener('click', () => showDetails(item,indexEl)));
   
   
   
@@ -651,23 +646,6 @@ setMainBg('white')
 //-----------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     
     //avanzar por el scroll
     const advance =(num)=>{
@@ -754,6 +732,7 @@ document.addEventListener('touchend', () => {
 
 
 const moveCounter=(el,amount,index)=>{
+  //avanza el elemento en y
   el.style.transform = `translateY(${(parseFloat(el.dataset.translateX) / (window.innerWidth * .6)) * 100}%)`;
  
  
@@ -763,17 +742,18 @@ const moveCounter=(el,amount,index)=>{
  if (direction=='right') {
   
  
-  if(el.getBoundingClientRect().top > (el.getBoundingClientRect().width * countersArray.length)+ beginingCounter){ 
+  //cuando llegue el borde inferior mandarlo para arriba
+  if(el.getBoundingClientRect().bottom > (el.getBoundingClientRect().width * countersArray.length)+ beginingCounter){ 
     el.style.top = ` ${ -(((countersArray.length/2)+(countersArray.length-index))*100)       }%`;
    
-    if (parseFloat(el.dataset.translateX)   <0  && direction=='right') 
+
+    //revisar este if esta hardcodeado
+  //  if (parseFloat(el.dataset.translateX)   <0  ) 
+      if (el.getBoundingClientRect().top < (el.getBoundingClientRect().width)+ beginingCounter ) 
       {
   
         el.dataset.translateX=parseFloat(el.dataset.translateX)+ (  (((countersArray.length+1)*100)/100)* (window.innerWidth * .6))
-        //  if (index==2) {
-            alert(index)  
-            console.log(index,'cambio de dir')
-         // }
+  
    
       }
     
@@ -788,11 +768,26 @@ const moveCounter=(el,amount,index)=>{
 
 
  if (direction=='left') {
+  
 
 //======================================================================================= 
   if(el.getBoundingClientRect().top < -(el.getBoundingClientRect().width  *countersArray.length)+ beginingCounter){ 
     
     el.style.top = ` ${ (((countersArray.length/2)+((index)))*100)       }%`;
+
+
+
+    if (el.getBoundingClientRect().top > (el.getBoundingClientRect().width*countersArray.length)+ beginingCounter ) 
+      {
+  
+        el.dataset.translateX=parseFloat(el.dataset.translateX)- (  (((countersArray.length+1)*100)/100)* (window.innerWidth * .6))
+  
+   
+      }
+
+
+
+
     if((parseFloat(el.dataset.translateX) / (window.innerWidth * .6)) * 100<-((countersArray.length*2)-2)*100){ 
 
       console.log(index,'reposiciona',parseFloat(el.dataset.translateX)+  (  (((countersArray.length+1.5)*100)/100)* (window.innerWidth * .6)));

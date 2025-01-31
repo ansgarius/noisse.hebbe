@@ -46,12 +46,6 @@
     justify-content: center;
     text-align: center;
 }
-.content-full-width {
-    box-sizing: border-box;
-    padding-left: 80px;
-    padding-right: 80px;
-    max-width: 100%;
-}
 
  
  
@@ -470,6 +464,7 @@ img{
 
 
  .slider-zoom-wrapper .grid__item .content {
+    overflow: hidden;
     position: absolute;
     left: 0px;
     bottom: 0px;

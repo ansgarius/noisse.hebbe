@@ -6,22 +6,23 @@ import {Link} from "react-router-dom";
 import { useLocomotiveScroll } from 'react-locomotive-scroll'
 const Gallery=({x,setX,imagen1,imagen2,numItems,reverse,dark, setDark,name,isRowLeftImg2,isRowLeftText, rowLeftContentReverse, DesckRowRightImg1Right,
     isRowRightText, TabletaRowRightTextTop, DeskRowRightImg1Width, DeskRowRightImg1Height, DeskRowRightImg2Width, DeskRowRightImg2Height,rowRightImg1MR,DesckRowRightImg2MR,
-    DeskRowLeftImg1Width ,   DeskRowLeftImg1Height,TabletaRowLeftImg1Height,TabletaRowLeftImg1Width, TabletaRowLeftImg1Left, TabletaRowRightImg2MR,
-    TabletaRowRightImg2Width,  TabletaRowRightImg2Height, TabletaRowRightImg2Top, TabletaRowRightTextLeft,
+    DeskRowLeftImg1Width , DeskRowLeftImg1Right,DeskRowLeftImg1Bottom,  DeskRowLeftImg1Height,TabletaRowLeftImg1Height,TabletaRowLeftImg1Width, TabletaRowLeftImg1Left, TabletaRowRightImg2Right,
+    TabletaRowRightImg2Width,  TabletaRowRightImg2Height, TabletaRowRightImg2Top, TabletaRowRightTextLeft,TabletaRowLeftImg1Top,TabletaRowRightImg2Bottom,
 
-    TabletaRowRightImg1Width,   TabletaRowRightImg1Height , TabletaRowRightImg1Top,TabletaRowRightImg1Left,
+    TabletaRowRightImg1Width,   TabletaRowRightImg1Height , TabletaRowRightImg1Top,TabletaRowRightImg1Left,TabletaRowRightImg1Bottom,
+    DeskRowRightImg1Top,DeskRowRightImg1Left,DeskRowRightImg2Left,DeskRowRightImg2Bottom,
 
  setisportal,
 
               CelRowRightImg2Width,
               CelRowRightImg2Height,
               CelRowRightImg2Top,
-              CelRowRightImg2MR,
-              CelRowRightImg2Left,
+              CelRowRightImg2Right,
+              CelRowRightImg2Left,CelRowRightImg2Bottom,
 
     CelRowRightImg1Width,
     CelRowRightImg1Height,
-    CelRowRightImg1Top,
+    CelRowRightImg1Top,CelRowRightImg1Bottom,
     CelRowRightImg1Left,
     CelRowRightImg1Right,
 
@@ -30,7 +31,7 @@ const Gallery=({x,setX,imagen1,imagen2,numItems,reverse,dark, setDark,name,isRow
 
 
 
-    CelRowLeftImg1Width,
+    CelRowLeftImg1Width,CelRowLeftImg1Top,
     CelRowLeftImg1Height,
     CelRowLeftImg1Left,
  urlLink1 ,urlLink2
@@ -126,15 +127,15 @@ const Gallery=({x,setX,imagen1,imagen2,numItems,reverse,dark, setDark,name,isRow
 
     return(
         <>
-            <section className="a_beautiful_mess_gallery   section unconditional py-main"
+            <section className="a_beautiful_mess_gallery   section unconditional "
                 data-scroll-section="true"   data-scroll-section-id="section1"  data-scroll-section-inview   >
-                    <div data-scroll="true"  /* style={{background:'green'}} */ data-scroll-repeat="true"
+                    <div data-scroll="true"  style={{height:'100%'}} data-scroll-repeat="true"
                     data-scroll-id={name} data-scroll-call={name} className='wrapper'>
                         
                         {/*  <div data-scroll="true" className="locomotive-fadeInUp is-inview"></div> */}
 
                         {/* {numItems!=3?  */}
-                            <div  data-scroll="true"  className="  locomotive-fadeInUp delayp1  ">
+                            <div  data-scroll="true"  className=" wrapperTitle locomotive-fadeInUp delayp1  ">
                                 <h2 className="section-title white-space-nowrap">I chose you, because you are my destiny.</h2>
                             </div>
                         {/* 
@@ -159,9 +160,9 @@ const Gallery=({x,setX,imagen1,imagen2,numItems,reverse,dark, setDark,name,isRow
                                 
                                 style={{order:rowLeftContentReverse?"2":"", "--DeskRowLeftImg1Width":DeskRowLeftImg1Width,"--DeskRowLeftImg1Height":DeskRowLeftImg1Height,
                                 "--TabletaRowLeftImg1Width":TabletaRowLeftImg1Width,"--TabletaRowLeftImg1Height":TabletaRowLeftImg1Height,
-                                "--TabletaRowLeftImg1Left":TabletaRowLeftImg1Left,
-                                "--CelRowLeftImg1Width":CelRowLeftImg1Width,
-                                "--CelRowLeftImg1Height":CelRowLeftImg1Height,
+                                "--TabletaRowLeftImg1Left":TabletaRowLeftImg1Left,  "--DeskRowLeftImg1Right":DeskRowLeftImg1Right,"--TabletaRowLeftImg1Top":TabletaRowLeftImg1Top,
+                                "--DeskRowLeftImg1Bottom":DeskRowLeftImg1Bottom,"--CelRowLeftImg1Width":CelRowLeftImg1Width,
+                                "--CelRowLeftImg1Height":CelRowLeftImg1Height,"--CelRowLeftImg1Top":CelRowLeftImg1Top,
                                 "--CelRowLeftImg1Left":CelRowLeftImg1Left
                                 
                                 
@@ -274,9 +275,11 @@ style={{"--DeskRowRightImg1Width": DeskRowRightImg1Width,
 "--DesckRowRightImg1Right":DesckRowRightImg1Right,
 "--TabletaRowRightImg1Width":TabletaRowRightImg1Width,"--TabletaRowRightImg1Height":TabletaRowRightImg1Height,
 "--TabletaRowRightImg1Top":TabletaRowRightImg1Top, "--TabletaRowRightImg1Left":TabletaRowRightImg1Left,
+"--DeskRowRightImg1Left":DeskRowRightImg1Left,"--DeskRowRightImg1Top":DeskRowRightImg1Top,"--TabletaRowRightImg1Bottom":TabletaRowRightImg1Bottom,
+
 
 "--CelRowRightImg1Width":CelRowRightImg1Width, "--CelRowRightImg1Height":CelRowRightImg1Height,
-"--CelRowRightImg1Top":CelRowRightImg1Top, "--CelRowRightImg1Left":CelRowRightImg1Left,
+"--CelRowRightImg1Top":CelRowRightImg1Top, "--CelRowRightImg1Left":CelRowRightImg1Left,"--CelRowRightImg1Bottom":CelRowRightImg1Bottom,
 "--CelRowRightImg1Right":CelRowRightImg1Right,  
 }}
 
@@ -355,15 +358,15 @@ style={{"--DeskRowRightImg1Width": DeskRowRightImg1Width,
                                     "--DeskRowRightImg2Height":DeskRowRightImg2Height,"--DesckRowRightImg2MR":DesckRowRightImg2MR,
                                 "--TabletaRowRightImg2Width":TabletaRowRightImg2Width, 
                                 "--TabletaRowRightImg2Height":TabletaRowRightImg2Height,
-                                "--TabletaRowRightImg2Top":TabletaRowRightImg2Top,
-                                "--TabletaRowRightImg2MR":TabletaRowRightImg2MR,
-
+                                "--TabletaRowRightImg2Top":TabletaRowRightImg2Top,"--TabletaRowRightImg2Bottom":TabletaRowRightImg2Bottom,
+                                "--TabletaRowRightImg2Right":TabletaRowRightImg2Right,
+"--DeskRowRightImg2Left":DeskRowRightImg2Left,"--DeskRowRightImg2Bottom":DeskRowRightImg2Bottom,
                                 "--CelRowRightImg2Width":CelRowRightImg2Width,
                                 "--CelRowRightImg2Height":CelRowRightImg2Height,
                                 "--CelRowRightImg2Top":CelRowRightImg2Top,
-                                "--CelRowRightImg2MR":CelRowRightImg2MR,
+                                "--CelRowRightImg2Right":CelRowRightImg2Right,
                                 "--CelRowRightImg2Left":CelRowRightImg2Left,
-
+                                "--CelRowRightImg2Bottom":CelRowRightImg2Bottom,
  
                                 
                                 }}
